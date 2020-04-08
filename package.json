@@ -1,0 +1,11 @@
+{
+  "name": "goddamnjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sorousht/goddamnjs.git",
+  "author": "Soroush Torkzadeh <soroush.torkzadeh@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jest": "^25.2.7"
+  }
+}
