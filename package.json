@@ -5,6 +5,9 @@
   "repository": "git@github.com:sorousht/goddamnjs.git",
   "author": "Soroush Torkzadeh <soroush.torkzadeh@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "jest": "^25.2.7"
   }
