@@ -60,6 +60,8 @@ function decode(encodedText) {
   return MORSE[encodedText];
 }
 
+//TODO make a function for decoding morse text
+
 module.exports = {
   decode,
 };
