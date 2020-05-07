@@ -15,4 +15,10 @@ describe('decode', () => {
     expect(decode("...")).toBe("S");
     expect(decode(".----")).toBe("1");
   });
+  test('it should decode Mahdis which can be written in morse code like: "-- .- .... -.. .. ..."', () => {
+    expect(decode("-- .- .... -.. .. ...")).toBe("MAHDIS");
+  });
+  test.only('it should decode "WE ROCK" correctly ".-- .  .-. --- -.-. -.-"', () => {
+    expect(decode(".-- .  .-. --- -.-. -.-")).toBe("WE ROCK");
+  });
 });
