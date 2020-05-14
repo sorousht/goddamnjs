@@ -56,11 +56,18 @@ const MORSE = {
   '..--.-': '_',
   '...---...': 'SOS' };
 
-function decode(encodedText) {
-  return MORSE[encodedText];
+const decodeLetter = (letter) => MORSE[letter];
+
+function decodeWord (el) {
+  let elements = el.flatMap(e => decodeLetter(e)).join('')
+  return elements
 }
 
-//TODO make a function for decoding morse text
+function decode(encodedText) {
+let words = encodedText.split('  ')
+let letters = words.map(word => word.split(' '))
+return letters.map(element => decodeWord(element)).join(' ');
+}
 
 module.exports = {
   decode,
