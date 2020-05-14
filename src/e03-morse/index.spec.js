@@ -18,7 +18,7 @@ describe('decode', () => {
   test('it should decode Mahdis which can be written in morse code like: "-- .- .... -.. .. ..."', () => {
     expect(decode("-- .- .... -.. .. ...")).toBe("MAHDIS");
   });
-  test.only('it should decode "WE ROCK" correctly ".-- .  .-. --- -.-. -.-"', () => {
+  test('it should decode "WE ROCK" correctly ".-- .  .-. --- -.-. -.-"', () => {
     expect(decode(".-- .  .-. --- -.-. -.-")).toBe("WE ROCK");
   });
 });
