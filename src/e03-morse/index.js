@@ -59,7 +59,9 @@ const MORSE = {
 const decodeLetter = (letter) => MORSE[letter];
 
 function decodeWord (el) {
-  let elements = el.flatMap(e => decodeLetter(e)).join('')
+  console.log(el)
+  let elements = el.map(e => decodeLetter(e)).join('')
+  console.log(typeof elements)
   return elements
 }
 
